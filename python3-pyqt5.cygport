@@ -1,7 +1,7 @@
 inherit python3 qt5
 
 NAME="python3-pyqt5"
-VERSION=5.0
+VERSION=5.2.1
 RELEASE=1
 CATEGORY="Python"
 SUMMARY="Py3K Qt5 bindings"
@@ -13,8 +13,7 @@ HOMEPAGE="http://www.riverbankcomputing.co.uk/software/pyqt/"
 SRC_URI="mirror://sourceforge/pyqt/PyQt-gpl-${VERSION}.tar.gz"
 SRC_DIR="PyQt-gpl-${VERSION}"
 PATCH_URI="
-	5.0-cygwin.patch
-	5.0-dbus-mainloop-qt5.patch
+	5.2-cygwin.patch
 "
 
 src_compile() {

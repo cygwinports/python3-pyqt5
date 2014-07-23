@@ -1,0 +1,19 @@
+--- origsrc/PyQt-gpl-5.2.1/configure.py	2014-03-14 09:38:18.000000000 -0500
++++ src/PyQt-gpl-5.2.1/configure.py	2014-07-22 21:35:28.203731400 -0500
+@@ -2148,11 +2148,15 @@ win32 {
+     PY_MODULE = %s%s.pyd
+     target.files = %s%s.pyd
+     LIBS += %s
++} else:cygwin-* {
++    PY_MODULE = %s.dll
++    target.files = %s.dll
++    LIBS_PRIVATE += %s
+ } else {
+     PY_MODULE = %s.so
+     target.files = %s.so
+ }
+-''' % (target_name, debug_suffix, target_name, debug_suffix, link, target_name, target_name)
++''' % (target_name, debug_suffix, target_name, debug_suffix, link, target_name, target_name, link, target_name, target_name)
+ 
+         pro_lines.extend(shared.split('\n'))
+ 
