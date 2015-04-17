@@ -1,7 +1,7 @@
 inherit python3 qt5
 
 NAME="python3-pyqt5"
-VERSION=5.3.2
+VERSION=5.4.1
 RELEASE=1
 CATEGORY="Python"
 SUMMARY="Py3K Qt5 bindings"
@@ -15,6 +15,8 @@ SRC_DIR="PyQt-gpl-${VERSION}"
 PATCH_URI="
 	5.2-cygwin.patch
 "
+
+DIFF_EXCLUDES="qmldir"
 
 src_compile() {
 	lndirs
