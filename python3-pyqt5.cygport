@@ -2,7 +2,7 @@ inherit python3 qt5
 
 NAME="python3-pyqt5"
 VERSION=5.4.1
-RELEASE=1
+RELEASE=2
 CATEGORY="Python"
 SUMMARY="Py3K Qt5 bindings"
 DESCRIPTION="PyQt is a set of Python bindings for the Qt application
