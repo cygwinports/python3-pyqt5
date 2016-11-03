@@ -1,7 +1,7 @@
 inherit python3 qt5
 
 NAME="python3-pyqt5"
-VERSION=5.5
+VERSION=5.6
 RELEASE=1
 CATEGORY="Python"
 SUMMARY="Py3K Qt5 bindings"
@@ -10,9 +10,10 @@ framework and runs on all platforms supported by Qt. The bindings are
 implemented as a set of Python modules and contain over 300 classes and
 over 6,000 functions and methods."
 HOMEPAGE="http://www.riverbankcomputing.co.uk/software/pyqt/"
-SRC_URI="mirror://sourceforge/pyqt/PyQt-gpl-${VERSION}.tar.gz"
-SRC_DIR="PyQt-gpl-${VERSION}"
+SRC_URI="mirror://sourceforge/pyqt/PyQt5_gpl-${VERSION}.tar.gz"
+SRC_DIR="PyQt5_gpl-${VERSION}"
 PATCH_URI="
+	http://pkgs.fedoraproject.org/cgit/rpms/python-qt5.git/plain/PyQt5_gpl-5.6-dbus_ftbfs.patch?h=f24
 	5.2-cygwin.patch
 "
 
